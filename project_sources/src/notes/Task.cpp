@@ -21,7 +21,7 @@ string Task::get_name(char mode) {
             for (int i = 0; i < children_.size(); ++i) {
                 task_name_out += std::to_string(i)+ ")\n";
                 task_name_out += children_[i]->get_name('n');
-                task_name_out += "'\n---------\n";
+                task_name_out += "\n---------\n";
             }
             task_name_out += "---------\n";
             return task_name_out;
