@@ -31,10 +31,10 @@ vector<Note> Todo::split() {
 //    return new_notes;
 }
 note_status Todo::get_status() {
-    return this->status_;
+    return status_;
 }
 
 void Todo::change_status(note_status new_status) {
-    this->status_ = new_status;
+    status_ = new_status;
 }
 

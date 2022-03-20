@@ -3,7 +3,7 @@
 
 #include "Project.h"
 
-class Task: public Note {
+class Task: public Project {
 public:
     Task(string name, string descr = "", string short_n = "");
     Task(const vector<Note*>& child, string name, string descr = "", string short_n = "");
@@ -18,8 +18,6 @@ public:
     float get_bar();
     void change_bar(float new_bar);
 private:
-    vector<Note*> children_;
-    float bar_;
 };
 
 #endif //TODOSHNICK_TASK_H

@@ -13,7 +13,6 @@ public:
     vector<Note> split();
     note_status get_status();
     void change_status(note_status new_status);
-
 };
 
 #endif //TODOSHNICK_TODO_H

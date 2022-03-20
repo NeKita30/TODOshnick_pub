@@ -17,9 +17,9 @@ public:
     virtual string get_description(char mode) = 0;
 //    virtual vector<Mark> get_marks() = 0;
     virtual vector<Note> split() = 0;
-    note_status get_status();
+    virtual note_status get_status() = 0;
     virtual string test_note_structure();
-
+    virtual void change_status(note_status new_status) = 0;
 protected:
     string name_;
     string short_name_;
