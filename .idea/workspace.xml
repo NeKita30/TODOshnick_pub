@@ -9,7 +9,26 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65f567f5-6d42-42d0-b7a7-0beb62e8191b" name="Changes" comment="" />
+    <list default="true" id="65f567f5-6d42-42d0-b7a7-0beb62e8191b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Aspect.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Aspect.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Note.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Note.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Project.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Project.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Task.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Task.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Todo.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Todo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Aspect.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Aspect.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Project.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Project.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Task.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Task.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Todo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Todo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test01/CMakeFiles/test_note_structure01.dir/starts/test_note_structure.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test01/CMakeFiles/test_note_structure01.dir/starts/test_note_structure.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test01/src/notes/CMakeFiles/notes.dir/Aspect.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test01/src/notes/CMakeFiles/notes.dir/Aspect.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test01/src/notes/CMakeFiles/notes.dir/Note.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test01/src/notes/CMakeFiles/notes.dir/Note.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test01/src/notes/CMakeFiles/notes.dir/Project.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test01/src/notes/CMakeFiles/notes.dir/Project.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test01/src/notes/CMakeFiles/notes.dir/Task.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test01/src/notes/CMakeFiles/notes.dir/Task.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test01/src/notes/CMakeFiles/notes.dir/Todo.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test01/src/notes/CMakeFiles/notes.dir/Todo.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test01/src/notes/libnotes.so" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test01/src/notes/libnotes.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test01/test_note_structure01" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +76,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultPlantUmlFileTemplate" value="UML Sequence" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -78,7 +98,7 @@
       <workItem from="1647745776663" duration="192000" />
       <workItem from="1647745979819" duration="224000" />
       <workItem from="1647746209601" duration="382000" />
-      <workItem from="1647746598707" duration="12241000" />
+      <workItem from="1647746598707" duration="15627000" />
     </task>
     <servers />
   </component>

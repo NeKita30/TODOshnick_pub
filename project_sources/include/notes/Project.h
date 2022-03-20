@@ -6,7 +6,15 @@
 class Project: public Aspect {
 public:
     Project();
+    ~Project();
+    string get_name(char mode);
+    string get_description(char mode);
+//    vector<Mark> get_marks();
+    vector<Note> split();
     string test_note_structure();
+    note_status get_status();
+    float get_bar();
+private:
 };
 
 #endif //TODOSHNICK_PROJECT_H
