@@ -1,0 +1,39 @@
+@startuml
+
+interface Note {
++ get_name(mode):return string
++ get_description(mode):return string
++ get_marks():return Mark[]
++ split():return Note[]
+- name: string
+- short_name: string
+- description: string- Children: Note[]
+- marks: Mark[]
+- materials: Material[]
+}
+
+class Aspect {
+...
+- children: Note[]
+
+}
+
+class Todo {
+...
+}
+
+class Task {
+...
+}
+
+class Project {
+...
+}
+
+Aspect o--> Note
+Note <|-- Aspect
+Aspect <|-- Project
+Project <|-- Task
+Note <|-- Todo
+
+@enduml

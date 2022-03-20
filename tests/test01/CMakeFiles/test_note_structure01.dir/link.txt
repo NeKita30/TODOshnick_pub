@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_note_structure01.dir/starts/test_note_structure.cpp.o -o test_note_structure01  -Wl,-rpath,/home/nekita/TP/TODOshnick/tests/test01/src/notes src/notes/libnotes.so 
