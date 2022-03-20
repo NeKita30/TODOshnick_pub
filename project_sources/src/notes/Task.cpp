@@ -1,5 +1,8 @@
 #include "Task.h"
 
+Task::Task(string name, string descr = "", string short_n = "") :
+Project(name, descr, short_n) {};
+
 string Task::test_note_structure() {
     return "Task test func";
 }
@@ -11,4 +14,3 @@ note_status Task::get_status() {}
 float Task::get_bar() {}
 
 Task::~Task() {};
-Task::Task() {};

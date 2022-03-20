@@ -5,14 +5,14 @@
 
 class Todo: public Note {
 public:
-    Todo();
+    Todo(string name, string descr = "", string short_n = "");
     ~Todo();
-    string get_name(char mode);
-    string get_description(char mode);
+    string get_name(char mode = 'a');
+    string get_description(char mode = 'a');
 //    virtual vector<Mark> get_marks();
     vector<Note> split();
     note_status get_status();
-private:
+    void change_status(note_status new_status);
 
 };
 

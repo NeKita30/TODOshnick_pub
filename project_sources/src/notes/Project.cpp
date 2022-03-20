@@ -1,5 +1,8 @@
 #include "Project.h"
 
+Project::Project(string name, string descr = "", string short_n = "") :
+        Aspect(name, descr, short_n) {};
+
 string Project::test_note_structure() {
     return "Project test func";
 }
@@ -11,4 +14,3 @@ note_status Project::get_status() {}
 float Project::get_bar() {}
 
 Project::~Project() {};
-Project::Project() {};

@@ -11,13 +11,16 @@ enum note_status {NOTSTARTED, STARTED, DONE};
 
 class Note {
 public:
+    ~Note();
+    Note(string name, string descr, string short_n);
     virtual string get_name(char mode) = 0;
     virtual string get_description(char mode) = 0;
 //    virtual vector<Mark> get_marks() = 0;
     virtual vector<Note> split() = 0;
     note_status get_status();
     virtual string test_note_structure();
-private:
+
+protected:
     string name_;
     string short_name_;
     string description_;

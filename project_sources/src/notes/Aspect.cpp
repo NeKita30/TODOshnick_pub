@@ -1,5 +1,8 @@
 #include "Aspect.h"
 
+Aspect::Aspect(string name, string descr = "", string short_n = "") :
+        Note(name, descr, short_n) {};
+
 string Aspect::test_note_structure() {
     return "Aspect test func";
 }
@@ -12,4 +15,3 @@ note_status Aspect::get_status() {}
 float Aspect::get_bar() {}
 
 Aspect::~Aspect() {}
-Aspect::Aspect() {}

@@ -5,7 +5,7 @@
 
 class Aspect: public Note {
 public:
-    Aspect();
+    Aspect(string name, string descr, string short_n);
     ~Aspect();
     string get_name(char mode);
     string get_description(char mode);

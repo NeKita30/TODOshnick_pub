@@ -5,7 +5,7 @@
 
 class Task: public Project {
 public:
-    Task();
+    Task(string name, string descr, string short_n);
     ~Task();
     string get_name(char mode);
     string get_description(char mode);

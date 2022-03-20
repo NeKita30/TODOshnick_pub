@@ -5,7 +5,7 @@
 
 class Project: public Aspect {
 public:
-    Project();
+    Project(string name, string descr, string short_n);
     ~Project();
     string get_name(char mode);
     string get_description(char mode);
