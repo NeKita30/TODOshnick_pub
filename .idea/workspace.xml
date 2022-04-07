@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="Test_Project01" targetName="notes" />
-      <config projectName="Test_Project01" targetName="test_project01" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -14,8 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="65f567f5-6d42-42d0-b7a7-0beb62e8191b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Note.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Note.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Note.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Note.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +21,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -40,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="Prioject" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,25 +72,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RunManager" selected="CMake Application.test_project01">
-    <configuration name="notes" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_Project01" TARGET_NAME="notes" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test_project01" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_Project01" TARGET_NAME="test_project01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Test_Project01" RUN_TARGET_NAME="test_project01">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.test_project01" />
-      <item itemvalue="CMake Application.notes" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -109,8 +86,6 @@
       <workItem from="1647745979819" duration="224000" />
       <workItem from="1647746209601" duration="382000" />
       <workItem from="1647746598707" duration="37193000" />
-      <workItem from="1648208066204" duration="673000" />
-      <workItem from="1649276482345" duration="2850000" />
     </task>
     <servers />
   </component>
