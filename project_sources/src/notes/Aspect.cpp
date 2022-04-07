@@ -4,7 +4,7 @@
 
 Aspect::Aspect(string name, string descr = "", string short_n = "") :
         Note(std::move(name), std::move(descr), std::move(short_n)),
-        bar_(0) {};
+        bar_(0) {}
 
 string Aspect::GetName(char mode) const {
     switch(mode) {
@@ -21,10 +21,10 @@ string Aspect::GetDescription(char mode) const {
     return description_;
 }
 
-vector<Note*> Aspect::Split() {}
-note_status Aspect::GetStatus() const {
+NoteStatus Aspect::GetStatus() const {
     return status_;
 }
+
 float Aspect::GetBar() const {
     return bar_;
 }
