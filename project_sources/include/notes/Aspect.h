@@ -7,16 +7,16 @@ class Aspect: public Note {
 public:
     Aspect(string name, string descr, string short_n);
     ~Aspect();
-    string GetName(char mode);
-    string GetDescription(char mode);
+    string GetName(char mode) const;
+    string GetDescription(char mode) const;
     vector<Note*> Split();
-    note_status GetStatus();
-    void ChangeStatus(NoteStatus new_status);
+    NoteStatus GetStatus() const;
+    void ChangeBar(NoteStatus new_bar);
     void Complete();
     void Add(Note* new_note);
-    float GetBar();
+    float GetBar() const;
 private:
-    vector<Note> children_;
+    vector<Note*> children_;
     float bar_;
 };
 #endif //TODOSHNICK_ASPECT_H
