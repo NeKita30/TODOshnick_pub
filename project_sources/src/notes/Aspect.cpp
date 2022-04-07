@@ -2,7 +2,7 @@
 
 #include <utility>
 
-Aspect::Aspect(string name, string descr = "", string short_n = "") :
+Aspect::Aspect(string name, string descr = "", string short_n = "", const vector<Note*>& children={}) :
         Note(std::move(name), std::move(descr), std::move(short_n)),
         bar_(0) {}
 

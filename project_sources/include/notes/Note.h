@@ -22,7 +22,6 @@ protected:
     string short_name_;
     string description_;
     NoteStatus status_;
-    Note* parent_;
 };
 
 #endif //TODOSHNICK_NOTE_H

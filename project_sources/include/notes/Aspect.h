@@ -5,7 +5,7 @@
 
 class Aspect: public Note {
 public:
-    Aspect(string name, string descr, string short_n);
+    Aspect(string name, string descr, string short_n, const vector<Note*>& children);
     ~Aspect();
     void ChangeBar(NoteStatus new_bar);
     void Complete() override;
