@@ -3,12 +3,19 @@
 #include <utility>
 
 Project::Project(string name, string descr = "", string short_n = "",
-                 Aspect* parent = nullptr, const vector<Note*>& children = {}) :
+                 Note* parent = nullptr, const vector<Note*>& children = {}) :
 Aspect(std::move(name), std::move(descr), std::move(short_n), children), parent_(parent){};
 
 void Project::Complete() {
     status_ = DONE;
     parent_->ChildUpdate();
+}
+
+void Project::Start() {
+    status_ = STARTED;
+    if (parent_->GetStatus() == NOTSTARTED) {
+        parent_->Start();
+    }
 }
 
 Project::~Project() = default;

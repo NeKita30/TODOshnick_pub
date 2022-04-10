@@ -1,40 +1,39 @@
 #include "Todo.h"
 
-Todo::Todo(string name, string descr, string short_n) :
-Note(name, descr, short_n) {}
+#include <utility>
+
+Todo::Todo(string name, string descr, string short_n, Note* parent = nullptr) :
+Note(std::move(name), std::move(descr), std::move(short_n), parent) {}
 
 Todo::~Todo() = default;
 
-string Todo::get_name(char mode) {
-    switch(mode) {
-        case 's':
-            return this->short_name_;
-        case 'a':
-        default:
-            return this->name_;
+void Todo::Complete() {
+    status_ = DONE;
+    parent_->ChildUpdate();
+}
+
+void Todo::Start() {
+    status_ = STARTED;
+    if (parent_->GetStatus() == NOTSTARTED) {
+        parent_->Start();
     }
 }
 
-string Todo::get_description(char mode) {
+string Todo::GetName(char mode) const {
     switch(mode) {
+        case 'f':
+            return name_;
         case 's':
+            return short_name_;
+        default:
             return "";
-        case 'a':
-        default:
-            return this->description_;
     }
 }
 
-//    virtual vector<Mark> get_marks() {}
-vector<Note> Todo::split() {
-//    vector<Note> new_notes = {Todo(this->name_), Todo(this->name_)};
-//    return new_notes;
+string Todo::GetDescription(char mode) const {
+    return description_;
 }
-note_status Todo::get_status() {
+
+NoteStatus Todo::GetStatus() const {
     return status_;
 }
-
-void Todo::change_status(note_status new_status) {
-    status_ = new_status;
-}
-

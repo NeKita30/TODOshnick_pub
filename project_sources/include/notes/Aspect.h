@@ -8,8 +8,9 @@ public:
     Aspect(string name, string descr, string short_n, const vector<Note*>& children);
     ~Aspect();
     void Complete() override;
+    void Start() override;
     void Add(Note* new_note);
-    void ChildUpdate();
+    void ChildUpdate() override;
     string GetName(char mode) const override;
     string GetDescription(char mode) const override;
     NoteStatus GetStatus() const override;

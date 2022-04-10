@@ -3,7 +3,7 @@
 #include <utility>
 
 Aspect::Aspect(string name, string descr = "", string short_n = "", const vector<Note*>& children={}) :
-        Note(std::move(name), std::move(descr), std::move(short_n)),
+        Note(std::move(name), std::move(descr), std::move(short_n), nullptr),
         bar_(0), bar_step_(0) {}
 
 string Aspect::GetName(char mode) const {
@@ -38,6 +38,10 @@ void Aspect::ChangeBar(float new_bar) {
 
 void Aspect::Complete() {
     status_ = DONE;
+}
+
+void Aspect::Start() {
+    status_ = STARTED;
 }
 
 void Aspect::Add(Note* new_note) {
