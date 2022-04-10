@@ -9,14 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65f567f5-6d42-42d0-b7a7-0beb62e8191b" name="Changes" comment="Работа с Project и Note, Aspect">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Aspect.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Aspect.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Note.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Note.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Project.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Project.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Aspect.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Aspect.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Project.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Project.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="65f567f5-6d42-42d0-b7a7-0beb62e8191b" name="Changes" comment="Доделан Project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +84,7 @@
       <workItem from="1647746209601" duration="382000" />
       <workItem from="1647746598707" duration="37193000" />
       <workItem from="1649470857595" duration="2449000" />
-      <workItem from="1649604563372" duration="2149000" />
+      <workItem from="1649604563372" duration="2711000" />
     </task>
     <task id="LOCAL-00001" summary="Aspect доработка">
       <created>1649348775179</created>
@@ -114,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649372389036</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Доделан Project">
+      <created>1649608477752</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649608477752</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Aspect and Note доработка" />
     <MESSAGE value="Работа с Project и Note, Aspect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Работа с Project и Note, Aspect" />
+    <MESSAGE value="Доделан Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Доделан Project" />
   </component>
 </project>
