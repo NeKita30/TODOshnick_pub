@@ -4,7 +4,7 @@
 
 Aspect::Aspect(string name, string descr = "", string short_n = "", const vector<Note*>& children={}) :
         Note(std::move(name), std::move(descr), std::move(short_n)),
-        bar_(0) {}
+        bar_(0), bar_step_(0) {}
 
 string Aspect::GetName(char mode) const {
     switch(mode) {
@@ -29,7 +29,7 @@ float Aspect::GetBar() const {
     return bar_;
 }
 
-void Aspect::ChangeBar(NoteStatus new_bar) {
+void Aspect::ChangeBar(float new_bar) {
     bar_ = new_bar;
     if (bar_ == 1) {
         Complete();
@@ -41,8 +41,15 @@ void Aspect::Complete() {
 }
 
 void Aspect::Add(Note* new_note) {
-    bar_ = (bar_ * float(children_.size())) / float(children_.size() + 1);
+    int num_completed = int(bar_ * 100) / bar_step_;
+    bar_step_ = int(100 /int(children_.size() + 1));
+    bar_ = float(bar_step_) / 100 * float(num_completed);
     children_.push_back(new_note);
+}
+
+void Aspect::ChildUpdate() {
+    float new_bar = bar_ + float(bar_step_) / 100;
+    ChangeBar(bar_);
 }
 
 

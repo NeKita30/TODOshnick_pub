@@ -5,11 +5,11 @@
 
 class Project: public Aspect {
 public:
-    Project(string name, string descr = "", string short_n = "");
-    Project(const vector<Note*>& child, string name, string descr = "", string short_n = "");
+    Project(string name, string descr, string short_n, Aspect* parent, const vector<Note*>& children);
     ~Project();
+    void Complete() override;
 protected:
-    Note* parent_;
+    Aspect* parent_;
 };
 
 #endif //TODOSHNICK_PROJECT_H
