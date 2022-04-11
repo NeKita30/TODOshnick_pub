@@ -1,21 +1,20 @@
 @startuml
 
 abstract class Note {
-+ get_name(mode):return string
-+ get_description(mode):return string
-+ get_marks():return Mark[]
-+ split():return Note[]
-- name: string
-- short_name: string
-- description: string- Children: Note[]
-- marks: Mark[]
-- materials: Material[]
++ Complete()
++ Start()
++ ChangeParent()
+- name: String
+- description: String
+- short_name: String
+- parent: Note
+- status: NoteStatus
 }
 
 class Aspect {
-...
++ Add(Note)
+- bar: int
 - children: Note[]
-
 }
 
 class Todo {
