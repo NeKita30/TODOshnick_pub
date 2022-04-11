@@ -5,10 +5,12 @@
 
 class Project: public Aspect {
 public:
-    Project(string name, string descr, string short_n, Note* parent, const vector<Note*>& children);
+    Project(string name, string descr = "", string short_n = "",
+            Note* parent = nullptr, const vector<Note*>& children = {});
     ~Project();
     void Complete() override;
     void Start() override;
+    void ChangeParent(Note* new_parent) override;
 protected:
     Note* parent_;
 };

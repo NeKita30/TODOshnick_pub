@@ -5,20 +5,22 @@
 
 class Aspect: public Note {
 public:
-    Aspect(string name, string descr, string short_n, const vector<Note*>& children);
+    Aspect(string name, string descr = "", string short_n = "", const vector<Note*>& children = {});
     ~Aspect();
     void Complete() override;
     void Start() override;
     void Add(Note* new_note);
     void ChildUpdate() override;
+    void ChangeParent(Note* new_parent) override;
     string GetName(char mode) const override;
     string GetDescription(char mode) const override;
     NoteStatus GetStatus() const override;
-    float GetBar() const;
+    int GetBar() const;
 protected:
-    void ChangeBar(float new_bar);
+    void ChangeBar(int new_bar);
     vector<Note*> children_;
-    float bar_;
+    int bar_;
     int bar_step_;
 };
+
 #endif //TODOSHNICK_ASPECT_H

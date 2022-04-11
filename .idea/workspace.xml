@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="Test_Project01" targetName="test" />
+      <config projectName="Test_Project01" targetName="notes" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -9,7 +12,41 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65f567f5-6d42-42d0-b7a7-0beb62e8191b" name="Changes" comment="Доделан Project" />
+    <list default="true" id="65f567f5-6d42-42d0-b7a7-0beb62e8191b" name="Changes" comment="Работа с Todo и добавление функции Start">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/CMakeFiles/test.dir/starts/test_note_structure.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/src/notes/CMakeFiles/notes.dir/Aspect.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/src/notes/CMakeFiles/notes.dir/Note.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/src/notes/CMakeFiles/notes.dir/Project.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/src/notes/CMakeFiles/notes.dir/Task.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/src/notes/CMakeFiles/notes.dir/Todo.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/src/notes/libnotes.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-d39bb235a1c690a20deb.json" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-75f0b8589243f98e4c98.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/cmake-build-debug/.cmake/api/v1/reply/index-2022-04-07T14-34-38-0934.json" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/.cmake/api/v1/reply/index-2022-04-10T19-48-20-0831.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/cmake-build-debug/.cmake/api/v1/reply/target-test_project01-Debug-8277b0e9eb9365a0f608.json" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/.cmake/api/v1/reply/target-test-Debug-b0e9810562026ce80bfe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Aspect.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Aspect.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Note.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Note.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Project.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Project.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Task.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Task.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Todo.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Todo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Aspect.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Aspect.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Project.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Project.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Task.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Task.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Todo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Todo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/starts/test_note_structure.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/starts/test_note_structure.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/starts/test_project.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/starts/test_task.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/starts/test_todo.cpp" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +55,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -69,7 +107,29 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="CMake Application.test">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="notes" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_Project01" TARGET_NAME="notes" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_Project01" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Test_Project01" RUN_TARGET_NAME="test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.test" />
+      <item itemvalue="CMake Application.notes" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,7 +144,7 @@
       <workItem from="1647746209601" duration="382000" />
       <workItem from="1647746598707" duration="37193000" />
       <workItem from="1649470857595" duration="2449000" />
-      <workItem from="1649604563372" duration="2711000" />
+      <workItem from="1649604563372" duration="15111000" />
     </task>
     <task id="LOCAL-00001" summary="Aspect доработка">
       <created>1649348775179</created>
@@ -114,7 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649608477752</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Работа с Task">
+      <created>1649608958487</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649608958487</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Работа с Todo и добавление функции Start">
+      <created>1649612017642</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649612017642</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +221,19 @@
     <MESSAGE value="Aspect and Note доработка" />
     <MESSAGE value="Работа с Project и Note, Aspect" />
     <MESSAGE value="Доделан Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Доделан Project" />
+    <MESSAGE value="Работа с Task" />
+    <MESSAGE value="Работа с Todo и добавление функции Start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа с Todo и добавление функции Start" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/project_sources/starts/test_note_structure.cpp</url>
+          <line>24</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

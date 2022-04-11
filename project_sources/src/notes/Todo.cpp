@@ -2,7 +2,7 @@
 
 #include <utility>
 
-Todo::Todo(string name, string descr, string short_n, Note* parent = nullptr) :
+Todo::Todo(string name, string descr, string short_n, Note* parent):
 Note(std::move(name), std::move(descr), std::move(short_n), parent) {}
 
 Todo::~Todo() = default;
@@ -17,6 +17,12 @@ void Todo::Start() {
     if (parent_->GetStatus() == NOTSTARTED) {
         parent_->Start();
     }
+}
+
+void Todo::ChildUpdate() {}
+
+void Todo::ChangeParent(Note* new_parent) {
+    parent_ = new_parent;
 }
 
 string Todo::GetName(char mode) const {

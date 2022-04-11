@@ -18,6 +18,7 @@ public:
     virtual string GetDescription(char mode) const = 0;
     virtual NoteStatus GetStatus() const = 0;
     virtual void ChildUpdate() = 0;
+    virtual void ChangeParent(Note* new_parent) = 0;
     virtual void Start() = 0;
 protected:
     string name_;
