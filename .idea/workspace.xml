@@ -12,21 +12,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65f567f5-6d42-42d0-b7a7-0beb62e8191b" name="Changes" comment="UML диаграмма">
+    <list default="true" id="65f567f5-6d42-42d0-b7a7-0beb62e8191b" name="Changes" comment="Добавлена UML для Viewer и работа над README">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Aspect.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Aspect.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Note.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Note.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Project.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Project.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Task.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Task.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/include/notes/Todo.h" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/include/notes/Todo.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Aspect.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Aspect.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Note.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Note.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Project.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Project.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Task.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Task.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/src/notes/Todo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/src/notes/Todo.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_sources/starts/test_note_structure.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/starts/test_note_structure.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_sources/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/project_sources/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,9 +82,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RunManager" selected="CMake Application.test">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="notes" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_Project01" TARGET_NAME="notes" CONFIG_NAME="Debug">
@@ -126,7 +115,8 @@
       <workItem from="1647746209601" duration="382000" />
       <workItem from="1647746598707" duration="37193000" />
       <workItem from="1649470857595" duration="2449000" />
-      <workItem from="1649604563372" duration="24010000" />
+      <workItem from="1649604563372" duration="24732000" />
+      <workItem from="1649805360466" duration="345000" />
     </task>
     <task id="LOCAL-00001" summary="Aspect доработка">
       <created>1649348775179</created>
@@ -191,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649653661015</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Добавлена UML для Viewer и работа над README">
+      <created>1649732429883</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649732429883</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +226,8 @@
     <MESSAGE value="Переделан bar, сделан пример .cpp" />
     <MESSAGE value="Добавлен gitignore" />
     <MESSAGE value="UML диаграмма" />
-    <option name="LAST_COMMIT_MESSAGE" value="UML диаграмма" />
+    <MESSAGE value="Добавлена UML для Viewer и работа над README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена UML для Viewer и работа над README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
