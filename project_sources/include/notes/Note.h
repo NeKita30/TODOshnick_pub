@@ -11,7 +11,6 @@ enum NoteStatus {NOTSTARTED, STARTED, DONE};
 
 class Note {
 public:
-    ~Note();
     Note(string name, string descr, string short_n, Note* parent);
     virtual void Complete() = 0;
     virtual string GetName(char mode) const = 0;

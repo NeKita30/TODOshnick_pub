@@ -5,7 +5,6 @@
 Todo::Todo(string name, string descr, string short_n, Note* parent):
 Note(std::move(name), std::move(descr), std::move(short_n), parent) {}
 
-Todo::~Todo() = default;
 
 void Todo::Complete() {
     status_ = DONE;

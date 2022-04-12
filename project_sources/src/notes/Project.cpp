@@ -21,5 +21,3 @@ void Project::Start() {
 void Project::ChangeParent(Note* new_parent) {
     parent_ = new_parent;
 }
-
-Project::~Project() = default;

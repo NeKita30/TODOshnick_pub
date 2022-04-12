@@ -62,6 +62,3 @@ void Aspect::ChildUpdate() {
     int new_bar = bar_ + bar_step_;
     ChangeBar(new_bar);
 }
-
-
-Aspect::~Aspect() = default;

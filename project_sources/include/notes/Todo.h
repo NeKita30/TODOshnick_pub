@@ -6,7 +6,6 @@
 class Todo: public Note {
 public:
     Todo(string name, string descr = "", string short_name = "", Note* parent = nullptr);
-    ~Todo();
     void Complete() override;
     void Start() override;
     string GetName(char mode) const override;

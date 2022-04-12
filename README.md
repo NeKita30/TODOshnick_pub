@@ -1,22 +1,21 @@
 # TODOshnick
 # Project for TP
 
-TODOshnick is to help you not forget your plans, do everything on time and be as productive as possible. 
+Todoshnick - средство управления задачами. 
 
-With TODOshnick you can create your Projects of different Aspects of life, allocate Tasks, split them into TODO.
+Удобный список дел с простой структурой: формируем в жизни Aspect'ы, в каждом из них 
+заводим под важные дела Project'ы, выделяем Task'и и разбиваем их на Todo.
 
-With  different Methods of planning, such as Kanban, ABCD, GTD, etc., you can view your TODO list and always know - what to do next?
+Структура для Note, Aspect, Project, Task и Todo: древовидная (паттерн Composite),
+при этом Todo - листы, Note - главный абстрактный класс в корне.
 
-To plan, to distribute, to manage...
-TO DO!
+Для показа информации используется паттерн Visitor - для каждого
+конкретного случая есть своя реализация абстрактного класса Viewer: короткие имена, 
+полные имена, описания и т.д. В каждой реализации будут определены методы для каждого
+типа Note, принципиально отличающиеся у листов (Todo) и остальных вершин структуры.
 
 In checkpoint 1:
 
-Done:
-    Structure developed - pattern Composite (Note - Aspect - Project - Task, lists: Todo)
-    classes Todo, Task, Project - base work (display in console name, short name and description)
-In progress:
-    classes Aspect, Note
-    Methods of planning (with patterns Visitor, Strategy)
-    Console output
+Реализованы классы Note, Aspect, Project, Task и Todo, добавлены диаграммы и README.
+
 

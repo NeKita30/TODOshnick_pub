@@ -4,7 +4,6 @@
 #include "Task.h"
 #include "Todo.h"
 
-#include <iostream>
 
 int main() {
     Aspect aspect_a("Study", "Projects for MSU education", "S");

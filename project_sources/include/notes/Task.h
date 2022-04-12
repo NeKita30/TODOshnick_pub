@@ -7,7 +7,6 @@ class Task: public Project {
 public:
     Task(string name, string descr = "", string short_name = "",
          Note* parent = nullptr, const vector<Note*>& children = {});
-    ~Task();
 private:
 };
 

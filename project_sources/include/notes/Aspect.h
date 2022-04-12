@@ -6,7 +6,6 @@
 class Aspect: public Note {
 public:
     Aspect(string name, string descr = "", string short_n = "", const vector<Note*>& children = {});
-    ~Aspect();
     void Complete() override;
     void Start() override;
     void Add(Note* new_note);

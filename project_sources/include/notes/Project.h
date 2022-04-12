@@ -7,7 +7,6 @@ class Project: public Aspect {
 public:
     Project(string name, string descr = "", string short_n = "",
             Note* parent = nullptr, const vector<Note*>& children = {});
-    ~Project();
     void Complete() override;
     void Start() override;
     void ChangeParent(Note* new_parent) override;
