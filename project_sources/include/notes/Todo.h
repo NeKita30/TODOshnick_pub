@@ -5,14 +5,15 @@
 
 class Todo: public Note {
 public:
-    Todo(string name, string descr = "", string short_n = "");
-    ~Todo();
-    string get_name(char mode = 'a');
-    string get_description(char mode = 'a');
-//    virtual vector<Mark> get_marks();
-    vector<Note> split();
-    note_status get_status();
-    void change_status(note_status new_status);
+    Todo(string name, string descr = "", string short_name = "", Note* parent = nullptr);
+    void Complete() override;
+    void Start() override;
+    string GetName(char mode) const override;
+    string GetDescription(char mode) const override;
+    NoteStatus GetStatus() const override;
+    void ChangeParent(Note* new_parent) override;
+    void ChildUpdate() override;
+private:
 };
 
 #endif //TODOSHNICK_TODO_H

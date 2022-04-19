@@ -1,10 +1,7 @@
 #include "Note.h"
 
-Note::Note(string name, string descr = "", string short_n = "") :
-name_(name), description_(descr), short_name_(short_n) {}
+#include <utility>
 
-string Note::test_note_structure() {
-    return "Note and Todo test func";
-}
-
-Note::~Note() = default;
+Note::Note(string name, string descr = "", string short_n = "", Note* parent = nullptr) :
+name_(std::move(name)), description_(std::move(descr)),
+short_name_(std::move(short_n)), status_(NOTSTARTED), parent_(parent) {}
