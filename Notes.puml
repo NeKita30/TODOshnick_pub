@@ -1,0 +1,40 @@
+@startuml
+
+abstract class Note {
++ Complete()
++ Start()
++ ChangeParent()
+- name: String
+- description: String
+- short_name: String
+- parent: Note
+- status: NoteStatus
+}
+
+class Aspect {
++ Add(Note)
+- bar: int
+- children: Note[]
+}
+
+class Todo {
+...
+}
+
+class Task {
+...
+}
+
+class Project {
+...
+}
+
+Aspect o--> Note : Aspect - контейнер из Note объектов
+Project o--> Note : Project - контейнер из Note объектов
+Task o--> Note : Task - контейнер из Note объектов
+Note <|-- Aspect
+Aspect <|-- Project
+Project <|-- Task
+Note <|- Todo
+
+@enduml

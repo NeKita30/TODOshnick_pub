@@ -1,0 +1,28 @@
+@startuml
+
+abstract class Note {
++ accept(Viewer)
+}
+
+abstract class Viewer {
++ ViewAspect(Aspect)
++ ViewProject(Project)
++ ViewTask(Task)
++ ViewTodo(Todo)
+}
+
+class ShortNameViewer {
+}
+
+class FullNameViewer {
+}
+
+class DescriptionViewer {
+}
+
+ShortNameViewer -up--|> Viewer
+FullNameViewer -up--|> Viewer
+DescriptionViewer -up--|> Viewer
+Note ..> Viewer
+
+@enduml
