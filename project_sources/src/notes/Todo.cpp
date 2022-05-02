@@ -18,6 +18,10 @@ void Todo::Start() {
     }
 }
 
+void Todo::Accept(Viewer* viewer, vector<string>& output) {
+    viewer->ViewTodo(this, output);
+}
+
 void Todo::ChildUpdate() {}
 
 void Todo::ChangeParent(Note* new_parent) {

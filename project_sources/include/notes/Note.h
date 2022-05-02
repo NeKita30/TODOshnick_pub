@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 
+#include "Viewer.h"
 using std::string;
 using std::vector;
 
@@ -13,6 +14,7 @@ class Note {
 public:
     Note(string name, string descr, string short_n, Note* parent);
     virtual void Complete() = 0;
+    virtual void Accept(Viewer* viewer, vector<string>& output) = 0;
     virtual string GetName(char mode) const = 0;
     virtual string GetDescription(char mode) const = 0;
     virtual NoteStatus GetStatus() const = 0;

@@ -2,11 +2,13 @@
 #define TODOSHNICK_TASK_H
 
 #include "Project.h"
+#include "Viewer.h"
 
 class Task: public Project {
 public:
     Task(string name, string descr = "", string short_name = "",
          Note* parent = nullptr, const vector<Note*>& children = {});
+    void Accept(Viewer* viewer, vector<string>& output);
 private:
 };
 

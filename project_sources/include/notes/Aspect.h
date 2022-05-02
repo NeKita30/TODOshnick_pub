@@ -1,12 +1,14 @@
 #ifndef TODOSHNICK_ASPECT_H
 #define TODOSHNICK_ASPECT_H
-
+class Aspect;
 #include "Note.h"
+#include "Viewer.h"
 
 class Aspect: public Note {
 public:
     Aspect(string name, string descr = "", string short_n = "", const vector<Note*>& children = {});
     void Complete() override;
+    void Accept(Viewer* viewer, vector<string>& output) override;
     void Start() override;
     void Add(Note* new_note);
     void ChildUpdate() override;

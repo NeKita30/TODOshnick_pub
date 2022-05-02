@@ -2,12 +2,14 @@
 #define TODOSHNICK_TODO_H
 
 #include "Note.h"
+#include "Viewer.h"
 
 class Todo: public Note {
 public:
     Todo(string name, string descr = "", string short_name = "", Note* parent = nullptr);
     void Complete() override;
     void Start() override;
+    void Accept(Viewer* viewer, vector<string>& output);
     string GetName(char mode) const override;
     string GetDescription(char mode) const override;
     NoteStatus GetStatus() const override;

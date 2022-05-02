@@ -6,6 +6,10 @@ Aspect::Aspect(string name, string descr, string short_n, const vector<Note*>& c
         Note(std::move(name), std::move(descr), std::move(short_n), nullptr),
         bar_(0), bar_step_(0) {}
 
+void Aspect::Accept(Viewer* viewer, vector<string>& output) {
+    viewer->ViewAspect(this, output);
+}
+
 string Aspect::GetName(char mode) const {
     switch(mode) {
         case 'f':
