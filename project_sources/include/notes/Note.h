@@ -1,6 +1,6 @@
 #ifndef TODOSHNICK_NOTE_H
 #define TODOSHNICK_NOTE_H
-
+class Note;
 #include <iostream>
 #include <vector>
 
