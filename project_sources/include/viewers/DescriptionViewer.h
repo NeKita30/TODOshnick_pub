@@ -3,7 +3,7 @@
 
 #include "Viewer.h"
 
-class DescriptionViewer: Viewer {
+class DescriptionViewer: public Viewer {
 public:
     void ViewAspect(Aspect* aspect, std::vector<std::string>& output) override;
     void ViewProject(Project* project, std::vector<std::string>& output) override;
