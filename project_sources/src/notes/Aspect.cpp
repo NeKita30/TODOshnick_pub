@@ -1,5 +1,5 @@
 #include "Aspect.h"
-
+#include "Viewer.h"
 #include <utility>
 
 Aspect::Aspect(string name, string descr, string short_n, const vector<Note*>& children) :

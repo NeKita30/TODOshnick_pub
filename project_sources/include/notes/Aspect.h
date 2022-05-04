@@ -1,8 +1,9 @@
 #ifndef TODOSHNICK_ASPECT_H
 #define TODOSHNICK_ASPECT_H
-class Aspect;
+//class Aspect;
 #include "Note.h"
-#include "Viewer.h"
+//#include "Viewer.h"
+class Viewer;
 
 class Aspect: public Note {
 public:

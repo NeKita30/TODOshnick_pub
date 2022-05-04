@@ -1,14 +1,19 @@
 #ifndef TODOSHNICK_NOTE_H
 #define TODOSHNICK_NOTE_H
 class Note;
+class Aspect;
+class Project;
+class Task;
+class Todo;
+enum NoteStatus {NOTSTARTED, STARTED, DONE};
+
 #include <iostream>
 #include <vector>
 
-#include "Viewer.h"
+class Viewer;
 using std::string;
 using std::vector;
 
-enum NoteStatus {NOTSTARTED, STARTED, DONE};
 
 class Note {
 public:

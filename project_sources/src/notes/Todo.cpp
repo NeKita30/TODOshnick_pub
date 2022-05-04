@@ -1,5 +1,5 @@
 #include "Todo.h"
-
+#include "Viewer.h"
 #include <utility>
 
 Todo::Todo(string name, string descr, string short_n, Note* parent):

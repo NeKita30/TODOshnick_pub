@@ -1,5 +1,5 @@
 #include "Project.h"
-
+#include "Viewer.h"
 #include <utility>
 
 Project::Project(string name, string descr, string short_n,

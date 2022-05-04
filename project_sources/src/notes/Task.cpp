@@ -1,5 +1,5 @@
 #include "Task.h"
-
+#include "Viewer.h"
 #include <utility>
 
 Task::Task(string name, string descr, string short_name,

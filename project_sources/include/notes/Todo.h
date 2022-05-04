@@ -1,9 +1,9 @@
 #ifndef TODOSHNICK_TODO_H
 #define TODOSHNICK_TODO_H
-class Todo;
+//class Todo;
 #include "Note.h"
-#include "Viewer.h"
-
+//#include "Viewer.h"
+class Viewer;
 class Todo: public Note {
 public:
     Todo(string name, string descr = "", string short_name = "", Note* parent = nullptr);

@@ -1,9 +1,9 @@
 #ifndef TODOSHNICK_TASK_H
 #define TODOSHNICK_TASK_H
-class Task;
+//class Task;
 #include "Project.h"
-#include "Viewer.h"
-
+//#include "Viewer.h"
+class Viewer;
 class Task: public Project {
 public:
     Task(string name, string descr = "", string short_name = "",

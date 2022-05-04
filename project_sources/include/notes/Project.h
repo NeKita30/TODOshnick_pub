@@ -1,9 +1,9 @@
 #ifndef TODOSHNICK_PROJECT_H
 #define TODOSHNICK_PROJECT_H
-class Project;
+//class Project;
 #include "Aspect.h"
-#include "Viewer.h"
-
+//#include "Viewer.h"
+class Viewer;
 class Project: public Aspect {
 public:
     Project(string name, string descr = "", string short_n = "",
