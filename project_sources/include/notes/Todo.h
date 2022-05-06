@@ -1,8 +1,7 @@
 #ifndef TODOSHNICK_TODO_H
 #define TODOSHNICK_TODO_H
-//class Todo;
 #include "Note.h"
-//#include "Viewer.h"
+
 class Viewer;
 class Todo: public Note {
 public:
