@@ -1,6 +1,6 @@
 
-#ifndef TEST_PROJECT01_FULLNAMEVIEWER_H
-#define TEST_PROJECT01_FULLNAMEVIEWER_H
+#ifndef FULLNAMEVIEWER_H
+#define FULLNAMEVIEWER_H
 
 #include "Viewer.h"
 
@@ -13,4 +13,4 @@ public:
 };
 
 
-#endif //TEST_PROJECT01_FULLNAMEVIEWER_H
+#endif // FULLNAMEVIEWER_H

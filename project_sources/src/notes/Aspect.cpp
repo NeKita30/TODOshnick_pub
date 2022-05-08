@@ -33,6 +33,10 @@ int Aspect::GetBar() const {
     return bar_;
 }
 
+vector<Note*> Aspect::GetChildren() const {
+    return children_;
+}
+
 void Aspect::ChangeBar(int new_bar) {
     bar_ = new_bar;
     if (bar_ == 100) {

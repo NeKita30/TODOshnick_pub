@@ -1,5 +1,5 @@
-#ifndef TEST_PROJECT01_VIEWER_H
-#define TEST_PROJECT01_VIEWER_H
+#ifndef VIEWER_H
+#define VIEWER_H
 class Viewer;
 #include "Note.h"
 #include "Aspect.h"
@@ -14,4 +14,4 @@ public:
     virtual void ViewTask(Task* task, std::vector<std::string>& output) = 0;
     virtual void ViewTodo(Todo* todo, std::vector<std::string>& output) = 0;
 };
-#endif //TEST_PROJECT01_VIEWER_H
+#endif // VIEWER_H
