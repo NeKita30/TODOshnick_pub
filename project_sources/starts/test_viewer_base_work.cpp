@@ -8,6 +8,7 @@
 #include "ShortNameViewer.h"
 #include "FullNameViewer.h"
 #include "DescriptionViewer.h"
+#include "RecursiveFull.h"
 
 int main() {
     Aspect aspect_a("Study", "Projects for MSU education", "S");
@@ -18,8 +19,13 @@ int main() {
     Todo todo_b("Install Python");
     Task task_b("Find girl and friends");
     Todo todo_c("Uninstall Python", "Reason - it's not popular more");
-    auto* view_full_name = new FullNameViewer;
-    auto* view_description = new DescriptionViewer;
+    aspect_a.Add(&project_a);
+    aspect_b.Add(&task_b);
+    project_a.Add(&task_a);
+    project_a.Add(&todo_b);
+    task_a.Add(&todo_a);
+    auto* view_full_name = new RecursiveFull;
+    auto* view_description = new RecursiveFull;
     vector<string> result_1;
     vector<string> result_2;
     aspect_a.Accept(view_full_name, result_1);
