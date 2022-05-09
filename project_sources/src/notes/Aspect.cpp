@@ -21,7 +21,7 @@ string Aspect::GetName(char mode) const {
     }
 }
 
-string Aspect::GetDescription(char mode) const {
+string Aspect::GetDescription() const {
     return description_;
 }
 

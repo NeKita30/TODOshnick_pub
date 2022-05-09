@@ -21,7 +21,7 @@ public:
     virtual void Complete() = 0;
     virtual void Accept(Viewer* viewer, vector<string>& output) = 0;
     virtual string GetName(char mode) const = 0;
-    virtual string GetDescription(char mode) const = 0;
+    virtual string GetDescription() const = 0;
     virtual NoteStatus GetStatus() const = 0;
     virtual void ChildUpdate() = 0;
     virtual void ChangeParent(Note* new_parent) = 0;

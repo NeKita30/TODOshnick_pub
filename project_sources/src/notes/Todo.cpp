@@ -39,7 +39,7 @@ string Todo::GetName(char mode) const {
     }
 }
 
-string Todo::GetDescription(char mode) const {
+string Todo::GetDescription() const {
     return description_;
 }
 

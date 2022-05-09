@@ -15,7 +15,7 @@ public:
     void ChildUpdate() override;
     void ChangeParent(Note* new_parent) override;
     string GetName(char mode) const override;
-    string GetDescription(char mode) const override;
+    string GetDescription() const override;
     vector<Note*> GetChildren() const;
     NoteStatus GetStatus() const override;
     int GetBar() const;

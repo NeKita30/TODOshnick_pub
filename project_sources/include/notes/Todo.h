@@ -10,7 +10,7 @@ public:
     void Start() override;
     void Accept(Viewer* viewer, vector<string>& output) override;
     string GetName(char mode) const override;
-    string GetDescription(char mode) const override;
+    string GetDescription() const override;
     NoteStatus GetStatus() const override;
     void ChangeParent(Note* new_parent) override;
     void ChildUpdate() override;
