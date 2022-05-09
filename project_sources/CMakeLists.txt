@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(Test_Project01
+project(TODOshnick
     DESCRIPTION "Testing Project class01")
 
 set(HEADERS_NOTE_DIR ${PROJECT_SOURCE_DIR}/include/notes)

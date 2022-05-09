@@ -56,6 +56,8 @@ vector<string> Interface::Choose_Viewer(const vector<string>& request) {
         viewer = new ShortNameViewer;
     } else if (request[1] == "description") {
         viewer = new DescriptionViewer;
+    } else if (request[1] == "status") {
+        viewer = new StatusBarViewer;
     } else {
         viewer = new FullNameViewer;
     }
