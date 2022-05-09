@@ -58,6 +58,8 @@ vector<string> Interface::Choose_Viewer(const vector<string>& request) {
         viewer = new DescriptionViewer;
     } else if (request[1] == "status") {
         viewer = new StatusBarViewer;
+    } else if (request[1] == "full-tree") {
+        viewer = new RecursiveAllInfo;
     } else {
         viewer = new FullNameViewer;
     }

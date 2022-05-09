@@ -13,6 +13,7 @@
 #include "DescriptionViewer.h"
 #include "RecursiveFull.h"
 #include "StatusBarViewer.h"
+#include "RecursiveAllInfo.h"
 
 #include <unordered_map>
 using std::unordered_map;
