@@ -67,6 +67,9 @@ void Aspect::Add(Note* new_note) {
 }
 
 void Aspect::ChildUpdate() {
+    if (status_ == NOTSTARTED) {
+        Start();
+    }
     int new_bar = bar_ + bar_step_;
     ChangeBar(new_bar);
 }
