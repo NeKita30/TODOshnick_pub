@@ -4,7 +4,7 @@
 
 Aspect::Aspect(string name, string descr, string short_n, const vector<Note*>& children) :
         Note(std::move(name), std::move(descr), std::move(short_n), nullptr),
-        bar_(0), bar_step_(0) {}
+        bar_(0), bar_step_(0), children_(children) {}
 
 void Aspect::Accept(Viewer* viewer, vector<string>& output) {
     viewer->ViewAspect(this, output);

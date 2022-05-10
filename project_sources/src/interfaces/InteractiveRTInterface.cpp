@@ -10,6 +10,7 @@ void InteractiveRTInterface::GetRequest() {
             break;
         }
         if (word == "new" || word == "complete" || word == "view") {
+            request.clear();
             request.push_back(word);
             getting_request = true;
         } else if (word == "run") {

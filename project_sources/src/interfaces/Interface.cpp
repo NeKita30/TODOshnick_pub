@@ -22,11 +22,17 @@ void Interface::Add_Note(const vector<string>& request) {
     const string& description = request[4];
     Aspect* parent = nullptr;
     vector<Note*> children{};
+    int start_of_children_lst = 5;
     if (request[1] == "P" || request[1] == "Ts" || request[1] == "Td") {
-        parent = dynamic_cast<Aspect*>(FindByShortName(request[5]));
+        if (request.size() > 5 && request[5] != "|") {
+            parent = dynamic_cast<Aspect*>(FindByShortName(request[5]));
+            start_of_children_lst = 7;
+        } else if (request.size() > 5 && request[5] == "|") {
+            start_of_children_lst = 6;
+        }
     }
     if (request[1] == "A" || request[1] == "P" || request[1] == "Ts") {
-        for (int i = 6; i < request.size(); ++i) {
+        for (int i = start_of_children_lst; i < request.size(); ++i) {
             auto* ptr = FindByShortName(request[i]);
             if (ptr != nullptr) {
                 children.push_back(ptr);
