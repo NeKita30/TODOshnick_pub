@@ -141,18 +141,3 @@ Todo* Interface::Add_Todo(string name, string description, string short_n, Aspec
     sh_name_to_note.insert({short_n, new_todo});
     return new_todo;
 }
-
-vector<string> Interface::SplitRequest(const string& request, char sep) {
-    vector<string> words;
-    string current;
-    for (auto& ch: request) {
-        if (ch == sep) {
-            words.push_back(current);
-            current = "";
-        }
-        else {
-            current += ch;
-        }
-    }
-    return words;
-}

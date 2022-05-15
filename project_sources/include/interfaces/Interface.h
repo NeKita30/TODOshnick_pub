@@ -39,8 +39,6 @@ private:
     Task* Add_Task(string name, string description, string short_n, const vector<Note*>& child, Aspect* parent);
     Todo* Add_Todo(string name, string description, string short_n, Aspect* parent);
 
-    static vector<string> SplitRequest(const string& request, char sep);
-
 protected:
     void RequestProcessing(const vector<string>& request);
 };
