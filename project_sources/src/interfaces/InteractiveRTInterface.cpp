@@ -29,7 +29,7 @@ void InteractiveRTInterface::GetRequest() {
                 request.push_back(word);
             }
         } else {
-            SendAnswer(HELP);
+            SendAnswer(ShortHELP);
         }
     }
 }
