@@ -3,16 +3,20 @@
 
 #include "Note.h"
 
+class Viewer;
+
 class Aspect: public Note {
 public:
     Aspect(string name, string descr = "", string short_n = "", const vector<Note*>& children = {});
     void Complete() override;
+    void Accept(Viewer* viewer, vector<string>& output) override;
     void Start() override;
     void Add(Note* new_note);
     void ChildUpdate() override;
     void ChangeParent(Note* new_parent) override;
     string GetName(char mode) const override;
-    string GetDescription(char mode) const override;
+    string GetDescription() const override;
+    vector<Note*> GetChildren() const;
     NoteStatus GetStatus() const override;
     int GetBar() const;
 protected:

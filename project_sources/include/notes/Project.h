@@ -3,10 +3,12 @@
 
 #include "Aspect.h"
 
+class Viewer;
 class Project: public Aspect {
 public:
     Project(string name, string descr = "", string short_n = "",
             Note* parent = nullptr, const vector<Note*>& children = {});
+    void Accept(Viewer* viewer, vector<string>& output) override;
     void Complete() override;
     void Start() override;
     void ChangeParent(Note* new_parent) override;

@@ -1,5 +1,5 @@
 #include "Note.h"
-
+#include "Viewer.h"
 #include <utility>
 
 Note::Note(string name, string descr = "", string short_n = "", Note* parent = nullptr) :

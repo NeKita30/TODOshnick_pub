@@ -1,5 +1,5 @@
 #include "Todo.h"
-
+#include "Viewer.h"
 #include <utility>
 
 Todo::Todo(string name, string descr, string short_n, Note* parent):
@@ -16,6 +16,10 @@ void Todo::Start() {
     if (parent_->GetStatus() == NOTSTARTED) {
         parent_->Start();
     }
+}
+
+void Todo::Accept(Viewer* viewer, vector<string>& output) {
+    viewer->ViewTodo(this, output);
 }
 
 void Todo::ChildUpdate() {}
@@ -35,7 +39,7 @@ string Todo::GetName(char mode) const {
     }
 }
 
-string Todo::GetDescription(char mode) const {
+string Todo::GetDescription() const {
     return description_;
 }
 

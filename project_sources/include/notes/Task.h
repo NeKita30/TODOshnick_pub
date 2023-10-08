@@ -3,10 +3,12 @@
 
 #include "Project.h"
 
+class Viewer;
 class Task: public Project {
 public:
     Task(string name, string descr = "", string short_name = "",
          Note* parent = nullptr, const vector<Note*>& children = {});
+    void Accept(Viewer* viewer, vector<string>& output) override;
 private:
 };
 

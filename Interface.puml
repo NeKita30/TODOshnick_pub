@@ -1,0 +1,14 @@
+@startuml
+abstract class Interface {
++ GetRequest()
++ SendAnswer(vector<string>)
+- roots[]: Note
+- sh_name_to_note[]: (string; Note)
+- Add_Note(args)
+- View(Viewer, Note)
+- Start()
+- Complete()
+- Bind()
+- FindByShortName(string)
+}
+@enduml

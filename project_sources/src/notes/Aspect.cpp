@@ -1,10 +1,14 @@
 #include "Aspect.h"
-
+#include "Viewer.h"
 #include <utility>
 
 Aspect::Aspect(string name, string descr, string short_n, const vector<Note*>& children) :
         Note(std::move(name), std::move(descr), std::move(short_n), nullptr),
-        bar_(0), bar_step_(0) {}
+        bar_(0), bar_step_(0), children_(children) {}
+
+void Aspect::Accept(Viewer* viewer, vector<string>& output) {
+    viewer->ViewAspect(this, output);
+}
 
 string Aspect::GetName(char mode) const {
     switch(mode) {
@@ -17,7 +21,7 @@ string Aspect::GetName(char mode) const {
     }
 }
 
-string Aspect::GetDescription(char mode) const {
+string Aspect::GetDescription() const {
     return description_;
 }
 
@@ -27,6 +31,10 @@ NoteStatus Aspect::GetStatus() const {
 
 int Aspect::GetBar() const {
     return bar_;
+}
+
+vector<Note*> Aspect::GetChildren() const {
+    return children_;
 }
 
 void Aspect::ChangeBar(int new_bar) {
@@ -59,6 +67,9 @@ void Aspect::Add(Note* new_note) {
 }
 
 void Aspect::ChildUpdate() {
+    if (status_ == NOTSTARTED) {
+        Start();
+    }
     int new_bar = bar_ + bar_step_;
     ChangeBar(new_bar);
 }
